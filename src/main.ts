@@ -9,7 +9,6 @@ class Test {
   @log("testAfterMessage", { position: "after" })
   testLogAfterMethod() {
     console.log("testLogMethod02");
-    
   }
 }
 
