@@ -1,11 +1,11 @@
 type DescriptorOriginal = (...args: any[]) => any;
 
-export function log(
+export function log<T = any>(
   logMessage?: string,
   options: { position: "prev" | "after" } = { position: "prev" }
 ) {
   return (
-    target: any,
+    target: T,
     propertyKey: string,
     descriptor: TypedPropertyDescriptor<DescriptorOriginal>
   ) => {
